@@ -19,14 +19,6 @@ $button.onclick = function (event) {
   event.preventDefault();
 };
 
-function validarNombre(nombre) {
-  if (nombre.length === 0) {
-    return "Este campo al menos debe tener 1 caracter";
-  }
-
-  return "";
-}
-
 function validarCiudad(ciudad) {
   if (ciudad.length === 0) {
     return "Debes seleccionar una ciudad";
