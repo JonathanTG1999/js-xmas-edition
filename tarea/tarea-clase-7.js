@@ -28,8 +28,11 @@ function validarCiudad(ciudad) {
 }
 
 function validarDescripcionRegalo(descripcionRegalo) {
+  if (descripcionRegalo.length >= 100) {
+    return "El campo descripcion es muy largo";
+  }
   if (descripcionRegalo.length === 0) {
-    return "Debes escribir que regalo queres recibir";
+    return "El campo descripcion no puede estar vacio";
   }
 
   return "";
